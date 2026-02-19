@@ -1,0 +1,285 @@
+<html lang="pt-BR">
+
+	<head>
+		<meta charset="UTF-8">
+		<title> Teckina </title>
+		<link rel="stylesheet" href="style.css">
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+		
+	</head>
+		<div class="container">
+		<body>
+
+			<div class="header"> 
+			<img src="img/logo1.png" alt="Logo da Empresa" class="logo">
+			<h3>FEEDBACK MENSAL</h3> 
+			<img src="img/logo2.png" alt="Logo da Empresa 2" class="logo logo-direita">
+			</div>
+			
+			<div class="conteudo">
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Nome do Profissional Monitorado:</th>
+						<th>Função:</th>
+						<th>Cliente/Projeto:</th>
+						<th>Data:</th>
+						<th>Responsável pelo Feedback:</th>
+					</tr>
+					<tr>
+						<td><input type="text" name="nome" style="width:100%;"></td> 
+						<td>Técnico de Suporte - 1º Nível</td>
+						<td>Caixa - Service Desk </td>
+						<td><input type="text" name="data"></td>
+						<td>
+						<select name="responsavel"> 
+						<option value="">Selecione...</option> 
+						<option value="Canal 1">CRISTIANO LEITE SENA</option> 
+						<option value="Canal 2">DIULIANO FERREIRA LOUREDO DOS REIS</option> 
+						<option value="Canal 3">GUSTAVO RODRIGUES DE LIMA</option>
+						<option value="Canal 4">IAN DANTAS DA SILVA</option> 
+						<option value="Canal 5">IRLAN NASCIMENTO DOS SANTOS</option> 
+						<option value="Canal 6">LEANDRO DE SOUSA OLIVEIRA</option> 
+						<option value="Canal 7">LORRAINE LIMA XAVIER</option> 
+						<option value="Canal 8">PAULO LIRA</option> 
+						<option value="Canal 9">REBECA MARQUES DE ALMEIDA</option>
+						<option value="Canal 10">SAMARA KARINY SOUSA PONTES</option> 
+						<option value="Canal 11">STHEFANYA FAYFER OLIVEIRA SILVA</option> 
+						<option value="Canal 11">WANESSA BARBOSA DOS ANJOS DE OLIVEIRA</option> 
+						</select></td>
+					</tr>
+				</thead>
+			</table>
+			</div>
+			
+			<h4> Conduta/ações a serem avaliadas e modificadas pelo profissional monitorado </h4>
+			<p> Foi realizado o feedback com o(a) técnico(a) <input type="text"> - Matrícula <input type="text"> 
+			no dia <input type="text">, referente aos atendimentos prestados na equipe <input type="text"> durante 
+			o mês de <input type="text">
+			<br>
+			<br>
+			<p> Durante o feedback foi apresentado ao(a) técnico(a) a planilha de auditorias, contendo todos os
+			atendimentos monitorados no período. No total, foram realizados <input type="number"> auditorias, 
+			avaliados com as seguintes notas:
+			<br>
+			<br>
+			
+			<table border="1">
+				<thead>
+					<tr>
+						<th>CANAL</th>
+						<th>ÓTIMO</th>
+						<th>BOM</th>
+						<th>REGULAR</th>
+						<th>RUIN</th>
+						<th>NOTA</th>
+					</tr>
+					<tr>
+						<td><select name="canal"> 
+						<option value="">Selecione...</option> 
+						<option value="Canal 1">CHAT</option> 
+						<option value="Canal 2">TELEFONE</option> 
+						<option value="Canal 3">WEB</option> 
+						</select></td> 
+						
+						<td><input type="number" </td>
+						<td><input type="number" </td>
+						<td><input type="number" </td>
+						<td><input type="number" </td>
+						<td><input type="number" </td>
+					</tr>
+				</thead>
+			</table>
+			
+		<p> Segue o gráfico feito do seu desempenho do último bimestre: </p>
+		<br>
+		<br>
+		<br>
+		<br> 
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<h4> Conduta/ações a serem avaliadas e modificadas pelo profissional </h4>
+		
+		<table border="1" style="width:90%; font-size:18px;">
+				<thead>
+					<tr>
+						<th>Data do Atendimento:</th>
+						<td><input type="text" style="width:100%;"></td>
+					</tr>
+						<th>CALL ID:</th>
+						<td><input type="text" style="width:100%;"></td>
+					</tr>
+						<th>Demanda do Usuário</th>
+						<td><textarea style="width:100%; height:80px;"></textarea></td>
+					</tr>
+						<th>Registro de Ligação</th>
+						<td><input type="text" style="width:100%;"></td>
+					</tr>
+						<th>Análise do Atendimento</th>
+						<td><textarea style="width:100%; height:350px;"></textarea></td>
+					</tr>
+						<th>Nota</th>
+						<td><input type="text" style="width:100%;"></td>
+					</tr>
+				</thead>
+		</table>
+				<br>
+				<br>
+				<br>
+		<table border="1" style="width:90%; font-size:19px;">
+				<thead>
+					<tr>
+						<th>Data do Atendimento:</th>
+						<td><input type="text" style="width:100%;"></td>
+					</tr>
+						<th>CALL ID:</th>
+						<td><input type="text" style="width:100%;"></td>
+					</tr>
+						<th>Demanda do Usuário</th>
+						<td><textarea style="width:100%; height:80px;"></textarea></td>
+					</tr>
+						<th>Registro de Ligação</th>
+						<td><input type="text" style="width:100%;"></td>
+					</tr>
+						<th>Análise do Atendimento</th>
+						<td><textarea style="width:100%; height:350px;"></textarea></td>
+					</tr>
+						<th>Nota</th>
+						<td><input type="text" style="width:100%;"></td>
+					</tr>
+				</thead>
+		</table>
+				<br>
+				<br>
+				<br>
+		<table border="1" style="width:90%; font-size:19px;">
+				<thead>
+					<tr>
+						<th>Data do Atendimento:</th>
+						<td><input type="text" style="width:100%;"></td>
+					</tr>
+						<th>CALL ID:</th>
+						<td><input type="text" style="width:100%;"></td>
+					</tr>
+						<th>Demanda do Usuário</th>
+						<td><textarea style="width:100%; height:80px;"></textarea></td>
+					</tr>
+						<th>Registro de Ligação</th>
+						<td><input type="text" style="width:100%;"></td>
+					</tr>
+						<th>Análise do Atendimento</th>
+						<td><textarea style="width:100%; height:350px;"></textarea></td>
+					</tr>
+						<th>Nota</th>
+						<td><input type="text" style="width:100%;"></td>
+					</tr>
+				</thead>
+		</table>
+		
+		<h4> Considerações do responsável pelo feedback: </h4>
+			<textarea style="width:90%; height:150px;"></textarea>
+			
+		<h4> Itens sugeridos pelo profissional avaliado (Para facilitar a execução de seu trabalho no dia a dia) </h4>
+			<textarea style="width:90%; height:150px;"></textarea>
+			
+			<br>
+			<br>
+			<br>
+			
+		<p>Eu, <input type="text"> - Matrícula: <input type="text">, Equipe: <input type="text">, declaro ter recebido 
+		as orientaçõs da Supervisão e Equipe de Qualidade, na data <input type="text">. Estou ciente que foram repassadas
+		informaçõs referente as minhas ações e foram levantadas os pontos de melhoria necessários para minha performance 
+		profissional. Estou ciente que fui orientado(a).</p>
+		
+		<br>
+		<br>
+		<br>
+		
+		
+		
+		<div class="assinaturas"> 
+		<div class="assinatura"> 
+		<div class="linha"></div> 
+		<div class="nome">Analista de Qualidade</div> 
+		</div> <div class="assinatura"> <div class="linha"></div> 
+		<div class="nome">Supervisor(a) da Equipe Monitorada</div> 
+		</div> 
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="assinatura-central"> 
+		<div class="linha"></div> 
+		<div class="nome">Profissional Monitorado</div> 
+		</div>
+		
+		<br>
+		<br>
+		<br>
+					
+  <button onclick="gerarPDF()">Gerar Documento PDF</button>
+  <button onclick="gerarWORD()">Gerar Documento WORD</button>
+
+
+</body>
+  
+
+<script>
+  function gerarPDF() {
+    html2canvas(document.body, { backgroundColor: '#add8e6', scale: 2 }).then(function(canvas) {
+      const imgData = canvas.toDataURL('image/png');
+      const { jsPDF } = window.jspdf;
+      const pdf = new jsPDF('p', 'mm', 'a4');
+      const pdfWidth = pdf.internal.pageSize.getWidth();
+      const pdfHeight = pdf.internal.pageSize.getHeight();
+      const imgWidth = pdfWidth;
+      const imgHeight = (canvas.height * pdfWidth) / canvas.width;
+
+      let heightLeft = imgHeight;
+      let position = 0;
+
+      // primeira página com fundo azul
+      pdf.setFillColor(173, 216, 230); // azul claro RGB
+      pdf.rect(0, 0, pdfWidth, pdfHeight, 'F');
+      pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+      heightLeft -= pdfHeight;
+
+      // páginas adicionais com fundo azul
+      while (heightLeft > 0) {
+        position = heightLeft - imgHeight;
+        pdf.addPage();
+        pdf.setFillColor(173, 216, 230); // azul claro
+        pdf.rect(0, 0, pdfWidth, pdfHeight, 'F');
+        pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+        heightLeft -= pdfHeight;
+      }
+
+      pdf.save("feedback.pdf");
+    });
+  }
+
+  function gerarWORD() {
+    const conteudo = document.documentElement.innerHTML;
+    const blob = new Blob(['\ufeff', conteudo], { type: 'application/msword' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'feedback.doc';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
+
+
+
+</html>
